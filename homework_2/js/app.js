@@ -36,5 +36,31 @@ for (let i = 1; i < 101; i++) {
     else {
         console.log(i);
     }
-    
 }
+
+// GETTING TO KNOW YOU
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+// 1)
+shahzad[0] = 'Gameboy';
+console.log(shahzad);
+// 2)
+daniel[1] += 1;
+console.log(daniel);
+// 3)
+ryan[2] = 'Gotham City';
+console.log(ryan);
+// 4)
+reuben.pop(2);
+reuben.push('Chicago');
+console.log(reuben);
+// 5)
+jim.pop(2);
+jim.push('Marrakesch','New Orleans','Istanbul');
+console.log(jim);
+jim.splice(2,1);
+console.log(jim);
