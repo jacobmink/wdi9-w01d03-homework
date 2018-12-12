@@ -64,3 +64,20 @@ jim.push('Marrakesch','New Orleans','Istanbul');
 console.log(jim);
 jim.splice(2,1);
 console.log(jim);
+
+// YELL AT THE NINJA TURTLES
+// 1)
+const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// 2)
+for (let i = 0; i < turtles.length; i++) {
+    console.log(turtles[i].toUpperCase());
+}
+// 3)
+for (let i = 0; i < turtles.length; i++) {
+    const split_turtles = turtles[i].split('');
+    for (let j = 0; j < split_turtles.length; j+=2) {
+        split_turtles[j] = split_turtles[j].toUpperCase();
+    }
+    const join_turtles = split_turtles.join('');
+    console.log(join_turtles);
+}
