@@ -25,13 +25,13 @@ for (let i = 0; i < 20; i++) {
 // FIZZBUZZ
 for (let i = 1; i < 101; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
-        console.log(i + 'fizzbuzz');
+        console.log(i + ' fizzbuzz');
     }
     else if (i % 3 == 0) {
-        console.log(i + 'fizz');
+        console.log(i + ' fizz');
     }
     else if (i % 5 == 0) {
-        console.log(i + 'buzz');
+        console.log(i + ' buzz');
     }
     else {
         console.log(i);
@@ -81,3 +81,68 @@ for (let i = 0; i < turtles.length; i++) {
     const join_turtles = split_turtles.join('');
     console.log(join_turtles);
 }
+
+// RETURN OF THE CLOSETS
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+// Alien Attire
+const kristynsShoe = kristynsCloset.splice(0,1)[0];
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset);
+console.log(kristynsCloset);
+
+// Dress 'em Up
+const kout1 = [];
+const kout2 = [];
+const kout3 = [];
+const kristynOutfits = [kout1,kout2,kout3];
+const tout1 = [];
+const tout2 = [];
+const tout3 = [];
+const thomOutfits = [tout1,tout2,tout3];
+let placeholder = 0;
+const new_thomCloset = thomsCloset.flat();
+
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < kristynOutfits.length; j++) {
+        let rando = Math.floor(Math.random() * kristynsCloset.length);
+        kristynOutfits[j].push(kristynsCloset[rando]);
+    }
+}
+for (let k = 0; k < 5; k++) {
+    for (let m = 0; m < thomOutfits.length; m++) {
+        let rando = Math.floor(Math.random() * new_thomCloset.length);
+        thomOutfits[m].push(new_thomCloset[rando]);
+    }
+} 
+console.log(kristynOutfits);
+console.log(thomOutfits);
