@@ -146,3 +146,13 @@ for (let k = 0; k < 5; k++) {
 } 
 console.log(kristynOutfits);
 console.log(thomOutfits);
+
+// Dirty Laundry
+for (i = 0; i < kristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+// Inventory
+for (i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
+}
