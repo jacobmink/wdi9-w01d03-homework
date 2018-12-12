@@ -148,11 +148,27 @@ console.log(kristynOutfits);
 console.log(thomOutfits);
 
 // Dirty Laundry
-for (i = 0; i < kristynsCloset.length; i++) {
+for (let i = 0; i < kristynsCloset.length; i++) {
     console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
 }
 
 // Inventory
-for (i = 0; i < thomsCloset.length; i++) {
+for (let i = 0; i < thomsCloset.length; i++) {
     console.log(thomsCloset[i]);
 }
+
+// MULTIPLES OF 3 AND 5
+const sum_list = [];
+for (let i = 0; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum_list.push(i);
+    }
+}
+const summing_fn = function (arr) {
+    let start = 0;
+    for (let i = 0; i < arr.length; i++) {
+        start += arr[i];
+    }
+    return start;
+}
+console.log(summing_fn(sum_list));
