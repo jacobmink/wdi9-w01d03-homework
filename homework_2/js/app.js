@@ -172,3 +172,27 @@ const summing_fn = function (arr) {
     return start;
 }
 console.log(summing_fn(sum_list));
+
+// HUNGRY FOR MORE
+// Triangles
+
+// 0)
+const argument = 9;
+// 1)
+for (let i = 1; i < argument + 1; i++) {
+    console.log(('#'.repeat(i)));
+}
+// 2)
+for (let i = argument; i > 0; i--) {
+    let rem = (argument - i) + 1;
+    console.log((' '.repeat(i - 1) + '#'.repeat(rem)));
+}
+// 3)
+for (let i = argument; i > 0; i--) {
+    console.log(('#'.repeat(i)));
+}
+// 4)
+for (let i = 1; i < argument + 1; i++) {
+    let rem = (argument - i) + 1;
+    console.log((' '.repeat(i - 1) + '#'.repeat(rem)));
+}
